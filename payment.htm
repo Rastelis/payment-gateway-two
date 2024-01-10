@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Gateway</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="content-container">
+            <div class="text-container">
+                <h5>Card Number</h5>
+                <p>Enter 16-digit card number on the card</p>
+            </div>
+            <div><i class="bi bi-pencil"></i><a href="#">Edit</a></div>
+        </div>
+        <div class="content-container">
+            <div class="user-input-container mastercard">
+                <div class="user-input"><img src="resources/icons/mastercard.svg" alt="mastercard"><input
+                        id="mastercard" placeholder="LT0123456789012345" type="text"></div>
+            </div>
+        </div>
+        <div class="content-container">
+            <div class="text-container">
+                <h5>Expirity Date</h5>
+                <p>Enter expiration date of the card</p>
+            </div>
+            <div class="user-input-container">
+                <div class="input-group">
+                    <div class="expirity-date"><input placeholder="MM" id="mm" type="number"></div>
+                    <div>/</div>
+                    <div class="expirity-date"><input placeholder="YY" id="yy" type="number"></div>
+                </div>
+            </div>
+        </div>
+        <div class="content-container">
+            <div class="text-container">
+                <h5>CVC Number</h5>
+                <p>Enter card verification code on the back of the card</p>
+            </div>
+            <div class="user-input-container">
+                <div class="user-input"><input id="CVC" type="number"><i class="bi bi-eye"></i></div>
+            </div>
+        </div>
+        <div class="content-container">
+            <div class="text-container">
+                <h5>Cardholder Name</h5>
+                <p>Enter cardholder's name</p>
+            </div>
+            <div class="user-input-container">
+                <div class="user-input"><input placeholder="CARDHOLDER NAME" id="cardholder-name" type="text"><i class="bi bi-person"></i>
+                </div>
+            </div>
+        </div>
+        <button>Pay Now</button>
+    </div>
+</body>
+
+</html>
